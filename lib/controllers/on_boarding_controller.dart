@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:mobile_project/constant/t_image.dart';
+import 'package:mobile_project/nav.dart';
 import 'package:mobile_project/screens/home_screen.dart';
 
 class OnboardingController extends GetxController {
@@ -45,7 +46,7 @@ class OnboardingController extends GetxController {
   void skip() => finish();
 
   void finish() {
-    Get.offAll(() => const HomeScreen());
+    Get.offAll(() => Nav());
   }
 
   @override
